@@ -11,3 +11,4 @@ the PIC Model.
 |---------------------------------|-------------------------------|
 | Nitro Agility                   | https://www.nitroagility.com  |
 | Permguard                       | https://www.permguard.com     |
+| Amla Labs                       | https://amlalabs.com/         |
