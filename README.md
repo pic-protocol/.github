@@ -4,12 +4,8 @@ The PIC Model organization is an effort to define and implement PIC (Provenance 
 
 ---
 
----
-
 🧠 **PIC is the only real guardrail for AI.**  
 One simple example 👇
-
----
 
 🗂 **Cache with Proof-of-Possession (PoP)**  
 Cache key = URL  
@@ -22,8 +18,6 @@ Next user → gets admin page
 ✅ Works  
 ❌ Secure? No. **Confused deputy.**
 
----
-
 🔗 **Cache with PIC**  
 Cache key = `(URL, hash(authority-continuity))`
 
@@ -33,18 +27,12 @@ Cache key = `(URL, hash(authority-continuity))`
 A request can only reuse results derived from its **own execution continuity**.  
 No token parsing. No role checks. No edge policies.
 
----
-
 🔐 **Why it works**  
 Authority is enforced by **continuity**, not by PoP.
-
----
 
 📉 **Monotonicity**  
 Reuse only if authority shrinks `(ops₁ ⊆ ops₀)`.  
 Never by expansion.
-
----
 
 🚫 **PoP is the problem**  
 OAuth, sealed tokens, capabilities → the deputy is unavoidable.  

@@ -15,7 +15,6 @@ the PIC Model.
 
 ## Why PIC?
 
-
 🧠 **PIC is the only real guardrail for AI.**  
 One simple example 👇
 
