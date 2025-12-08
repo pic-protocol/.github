@@ -106,6 +106,12 @@ you change the gravity of distributed systems.
 Authorship, attribution, and normative authority are defined in the
 official PIC Spec.
 
+> “This work is based on the Provenance Identity Continuity (PIC) Model created by  
+> Nicola Gallo. The model and its initial specification originate from this work.  
+> Maintenance of the PIC Spec and related PIC Protocol documents is performed over  
+> time by the PIC Spec Contributors, with authorship of the model remaining with  
+> Nicola Gallo.”
+
 ---
 
 ## License
