@@ -1,55 +1,114 @@
 # PIC Model
 
-The PIC Model organization is an effort to define and implement PIC (Provenance Identity Continuity) for distributed execution systems.
+The PIC Model organization is an effort to define and implement  
+**PIC (Provenance Identity Continuity)** for distributed execution systems.
+
+PIC is a formal execution model that prevents confused-deputy failures by
+making **authority a property of execution continuity**, not of possessed
+artifacts.
+
+---
 
 ## Adopters
 
 The following organizations and products are adopting or experimenting with
-the PIC Model.
+the PIC Model:
 
-| Organization / Product          | Link                          |
-|---------------------------------|-------------------------------|
-| Nitro Agility                   | https://www.nitroagility.com  |
-| Permguard                       | https://www.permguard.com     |
-| Amla Labs                       | https://amlalabs.com/         |
+| Organization / Product | Link                         |
+|------------------------|------------------------------|
+| Nitro Agility          | https://www.nitroagility.com |
+| Permguard              | https://www.permguard.com    |
+| Amla Labs              | https://amlalabs.com/        |
 
-## Why PIC?
-
-🧠 **PIC is the only real guardrail for AI.**  
-One simple example 👇
-
-🗂 **Cache with Proof-of-Possession (PoP)**  
-Cache key = URL  
-
-`/report → HTML`
-
-Admin hits first → admin page cached  
-Next user → gets admin page  
-
-✅ Works  
-❌ Secure? No. **Confused deputy.**
-
-🔗 **Cache with PIC**  
-Cache key = `(URL, hash(authority-continuity))`
-
-- user ≠ admin authority  
-- different continuity → different cache entry  
-
-A request can only reuse results derived from its **own execution continuity**.  
-No token parsing. No role checks. No edge policies.
-
-🔐 **Why it works**  
-Authority is enforced by **continuity**, not by PoP.
-
-📉 **Monotonicity**  
-Reuse only if authority shrinks `(ops₁ ⊆ ops₀)`.  
-Never by expansion.
-
-🚫 **PoP is the problem**  
-OAuth, sealed tokens, capabilities → the deputy is unavoidable.  
-Same for AI guardrails built on possession.
+> Listing here does not imply endorsement or conformance certification.
 
 ---
 
-Change the ontology → new gravity for distributed systems.  
+## Why PIC?
+
+🧠 **PIC is a guardrail for distributed execution — including AI systems.**  
+Here’s a simple example 👇
+
+---
+
+### Cache with Proof-of-Possession (PoP)
+
+Cache key = URL  
+
+```
+/report → HTML
+```
+
+1. Admin hits first → admin page cached  
+2. Next user → receives admin page  
+
+✅ Works  
+❌ Secure? No → **Confused deputy**
+
+---
+
+### Cache with PIC
+
+Cache key =:
+
+```
+(URL, hash(authority-continuity))
+```
+
+- User ≠ Admin authority  
+- Different continuity → different cache entry  
+
+A request can only reuse results derived from **its own execution continuity**.
+
+No token parsing.  
+No role checks.  
+No edge-side policy guessing.
+
+---
+
+### Why it works
+
+🔐 **Authority is enforced by continuity, not possession.**
+
+📉 **Monotonicity**  
+Reuse is allowed only if:
+
+```
+ops₁ ⊆ ops₀
+```
+
+Never by authority expansion.
+
+🚫 **PoP is the root cause**  
+OAuth tokens, sealed credentials, capability replay →  
+the deputy is structurally unavoidable.
+
+The same applies to AI “guardrails” built on possession or role prompts.
+
+---
+
+### Change the ontology
+
+Change what authority *is* →  
+you change the gravity of distributed systems.
+
 **PIC.**
+
+---
+
+## Specification and Protocols
+
+- The **PIC Model** defines the core execution invariants.
+- The **PIC Spec** defines the normative semantics.
+- **PIC Protocol** documents (when published) define concrete protocol
+  encodings and interoperability profiles.
+
+Authorship, attribution, and normative authority are defined in the
+official PIC Spec.
+
+---
+
+## License
+
+Content is published under  
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**.

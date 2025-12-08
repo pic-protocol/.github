@@ -1,44 +1,47 @@
-# PIC Model
+# PIC Official Repository
 
-The PIC Model organization is an effort to define and implement PIC (Provenance Identity Continuity) for distributed execution systems.
+This repository hosts the **official materials for the Provenance Identity Continuity (PIC) framework**, including:
 
----
+- the **PIC Model** (conceptual and formal foundations),
+- the **PIC Spec** (normative specification of execution semantics and invariants),
+- and, when published, **PIC Protocol specifications** defining concrete protocol
+  encodings and interoperability profiles.
 
-🧠 **PIC is the only real guardrail for AI.**  
-One simple example 👇
+Together, these documents define what it means for a system to be
+**PIC-compliant**.
 
-🗂 **Cache with Proof-of-Possession (PoP)**  
-Cache key = URL  
+> “This work is based on the Provenance Identity Continuity (PIC) Model created by  
+> Nicola Gallo. The model and its initial specification originate from this work.  
+> Maintenance of the PIC Spec and related PIC Protocol documents is performed over  
+> time by the PIC Spec Contributors, with authorship of the model remaining with  
+> Nicola Gallo.”
 
-`/report → HTML`
+## Scope and Authority
 
-Admin hits first → admin page cached  
-Next user → gets admin page  
+- This repository contains the **Official PIC Spec** and related official
+  specifications.
+- PIC Protocol documents, when present, **implement** the PIC Model as defined
+  by the PIC Spec and do not redefine its core invariants.
+- Forks and derivative works may exist under the terms of the license, but **must
+  not represent themselves as canonical** unless explicitly designated.
 
-✅ Works  
-❌ Secure? No. **Confused deputy.**
+## License
 
-🔗 **Cache with PIC**  
-Cache key = `(URL, hash(authority-continuity))`
+This project is licensed under the  
+**Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
-- user ≠ admin authority  
-- different continuity → different cache entry  
+See `LICENSE` for full terms.
 
-A request can only reuse results derived from its **own execution continuity**.  
-No token parsing. No role checks. No edge policies.
+## Governance and Contributions
 
-🔐 **Why it works**  
-Authority is enforced by **continuity**, not by PoP.
+- Project governance is defined in `GOVERNANCE.md`
+- Contribution guidelines are defined in `CONTRIBUTING.md`
+- Code of Conduct is defined in `CODE_OF_CONDUCT.md`
 
-📉 **Monotonicity**  
-Reuse only if authority shrinks `(ops₁ ⊆ ops₀)`.  
-Never by expansion.
+Authorship, attribution requirements, and the normative status of the PIC Model,
+PIC Spec, and PIC Protocol documents are defined **exclusively** in the PIC Spec
+(Appendix B).
 
-🚫 **PoP is the problem**  
-OAuth, sealed tokens, capabilities → the deputy is unavoidable.  
-Same for AI guardrails built on possession.
-
----
-
-Change the ontology → new gravity for distributed systems.  
-**PIC.**
+In case of conflict, the applicable LICENSE files and the normative text of the
+PIC Spec and any Official PIC Protocol specifications take precedence over this
+README.
