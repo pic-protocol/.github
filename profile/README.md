@@ -28,6 +28,8 @@ the PIC Model:
 | Amla Labs              | https://amlalabs.com/        |
 
 > Listing here does not imply endorsement or conformance certification.
+>
+> To add your organization, submit a pull request.
 
 ---
 
