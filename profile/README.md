@@ -1,5 +1,12 @@
 # PIC Model
 
+> **Attribution Notice**  
+> The **Provenance Identity Continuity (PIC) Model** is a theoretical framework  
+> created by **Nicola Gallo**.  
+>  
+> The **PIC Specification** and all related official documents are published,  
+> maintained, and governed by **Nitro Agility S.r.l.** as the Specification Steward.
+
 The PIC Model organization is an effort to define and implement  
 **PIC (Provenance Identity Continuity)** for distributed execution systems.
 
@@ -27,14 +34,13 @@ the PIC Model:
 ## Why PIC?
 
 🧠 **PIC is a guardrail for distributed execution — including AI systems.**  
-Here’s a simple example 👇
+Here's a simple example 👇
 
 ---
 
 ### Cache with Proof-of-Possession (PoP)
 
 Cache key = URL  
-
 ```
 /report → HTML
 ```
@@ -50,7 +56,6 @@ Cache key = URL
 ### Cache with PIC
 
 Cache key =:
-
 ```
 (URL, hash(authority-continuity))
 ```
@@ -72,7 +77,6 @@ No edge-side policy guessing.
 
 📉 **Monotonicity**  
 Reuse is allowed only if:
-
 ```
 ops₁ ⊆ ops₀
 ```
@@ -83,7 +87,7 @@ Never by authority expansion.
 OAuth tokens, sealed credentials, capability replay →  
 the deputy is structurally unavoidable.
 
-The same applies to AI “guardrails” built on possession or role prompts.
+The same applies to AI "guardrails" built on possession or role prompts.
 
 ---
 
@@ -104,13 +108,7 @@ you change the gravity of distributed systems.
   encodings and interoperability profiles.
 
 Authorship, attribution, and normative authority are defined in the
-official PIC Spec.
-
-> “This work is based on the Provenance Identity Continuity (PIC) Model created by  
-> Nicola Gallo. The model and its initial specification originate from this work.  
-> Maintenance of the PIC Spec and related PIC Protocol documents is performed over  
-> time by the PIC Spec Contributors, with authorship of the model remaining with  
-> Nicola Gallo.”
+official PIC Specification (Appendix B).
 
 ---
 
