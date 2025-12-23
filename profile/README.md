@@ -116,3 +116,12 @@ official PIC Specification (Appendix B).
 
 Content is published under  
 **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+---
+
+## Organization
+
+This GitHub organization is operated by **Nitro Agility S.r.l.**
+
+For governance, attribution, and legal context, see the 
+[PIC Specification](https://github.com/pic-protocol/pic-spec).
