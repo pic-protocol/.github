@@ -43,8 +43,10 @@ Here's a simple example 👇
 ### Cache with Proof-of-Possession (PoP)
 
 Cache key = URL  
+
 ```
 /report → HTML
+
 ```
 
 1. Admin hits first → admin page cached  
@@ -58,8 +60,10 @@ Cache key = URL
 ### Cache with PIC
 
 Cache key =:
+
 ```
 (URL, hash(authority-continuity))
+
 ```
 
 - User ≠ Admin authority  
@@ -79,8 +83,10 @@ No edge-side policy guessing.
 
 📉 **Monotonicity**  
 Reuse is allowed only if:
+
 ```
 ops₁ ⊆ ops₀
+
 ```
 
 Never by authority expansion.
