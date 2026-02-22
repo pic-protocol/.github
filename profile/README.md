@@ -14,7 +14,7 @@ PIC is a formal execution model that prevents confused-deputy failures by
 making **authority a property of execution continuity**, not of possessed
 artifacts.
 
-[PIC Website](https://pic-protocol.org) | [PIC Specification](https://github.com/pic-model/pic-spec)
+[PIC Website](https://www.pic-protocol.org) | [PIC Specification](https://github.com/pic-model/pic-spec)
 
 ---
 
