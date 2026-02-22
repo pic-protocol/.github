@@ -14,22 +14,7 @@ PIC is a formal execution model that prevents confused-deputy failures by
 making **authority a property of execution continuity**, not of possessed
 artifacts.
 
----
-
-## Adopters
-
-The following organizations and products are adopting or experimenting with
-the PIC Model:
-
-| Organization / Product | Link                         |
-|------------------------|------------------------------|
-| Nitro Agility          | https://www.nitroagility.com |
-| Permguard              | https://www.permguard.com    |
-| Amla Labs              | https://amlalabs.com/        |
-
-> Listing here does not imply endorsement or conformance certification.
->
-> To add your organization, submit a pull request.
+[PIC Website](https://pic-protocol.org) | [PIC Specification](https://github.com/pic-model/pic-spec)
 
 ---
 
