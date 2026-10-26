@@ -1,70 +1,54 @@
-# PIC Official Repository
+<p align="center">
+  <img src="profile/assets/hero.png" alt="PIC. Authority is continued, not possessed. Provenance Identity Continuity: receiver-verified authority continuity for distributed systems and AI agents." width="860">
+</p>
 
-This repository hosts the **official materials for the Provenance Identity Continuity (PIC) framework**, including:
+# pic-protocol/.github
 
-- the **PIC Model** — the conceptual and formal theoretical framework,
-- the **PIC Specification (PIC Spec)** — the normative definition of execution semantics and invariants,
-- and, when published, **PIC Protocol specifications** defining concrete protocol encodings and interoperability profiles.
+This repository holds what the [pic-protocol](https://github.com/pic-protocol) organization shares across all its repositories: the public profile and the community health files.
+GitHub uses a file from here for any repository that does not define its own.
 
-Together, these documents define what it means for a system to be
-**PIC-compliant**.
+## What is here
 
-> **Attribution Notice**  
-> This work is based on the **Provenance Identity Continuity (PIC) Model**,  
-> a theoretical framework created by **Nicola Gallo**.  
->  
-> The **PIC Specification** and all related official documents are published,  
-> maintained, and governed by **Nitro Agility S.r.l.** as the Specification Steward.  
->  
-> Authorship of the PIC Model remains with its original author and is independent  
-> of repository ownership, governance, or publication activities.
+| Path                                       | What it is                                                                                    |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| [`profile/README.md`](profile/README.md)   | The organization profile shown at [github.com/pic-protocol](https://github.com/pic-protocol). |
+| [`profile/assets/`](profile/assets)        | The profile figures.                                                                          |
+| [`GOVERNANCE.md`](GOVERNANCE.md)           | How the PIC Spec and related PIC Protocol specifications are governed.                        |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md)       | How to contribute to the PIC Model, the PIC Spec and PIC Protocol documents.                  |
+| [`MAINTAINERS.md`](MAINTAINERS.md)         | The scope and limits of the Maintainer role.                                                  |
+| [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | The Contributor Covenant, as applied to this project.                                         |
+| [`SECURITY.md`](SECURITY.md)               | How to report a vulnerability: privately, never through a public issue.                       |
+| [`LICENSE`](LICENSE)                       | Creative Commons Attribution 4.0 International.                                               |
 
----
+## How the organization is laid out
 
-## Scope and Authority
+<p align="center">
+  <img src="profile/assets/ecosystem.png" alt="How the pieces relate. The PIC Model, the formal theory, is stated normatively by the PIC Specification in pic-spec. PIC Protocols implement the Specification; none is published yet. Implementations, the pic-protocol Rust crates and PIC-X, run it; until a protocol is published, an implementation implements the Specification directly." width="860">
+</p>
 
-- This repository contains the **Official PIC Specification** and related official
-  documents designated by the Specification Steward.
-- PIC Protocol documents, when present, **implement** the PIC Model as defined by
-  the PIC Spec and MUST NOT redefine its core invariants.
-- Forks and derivative works may exist under the terms of the license, but **MUST
-  NOT present themselves as canonical** unless explicitly designated by the
-  Specification Steward.
+| Repository                                                                       | Role                                                            |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [pic-spec](https://github.com/pic-protocol/pic-spec)                             | The official PIC Specification, draft 0.2.                      |
+| [pic-x](https://github.com/pic-protocol/pic-x)                                   | PIC-X, the PIC Authority Broker and Exchange Server.            |
+| [pic-rust](https://github.com/pic-protocol/pic-rust)                             | The Rust crates for PIC Profile 0.2.                            |
+| [pic-protocol.github.io](https://github.com/pic-protocol/pic-protocol.github.io) | The source of [pic-protocol.org](https://www.pic-protocol.org). |
 
----
+## Scope and authority
+
+- PIC is defined by the **PIC Model** and the **PIC Specification**; repositories and implementations do not redefine it.
+- PIC Protocol documents, when published, **implement** the PIC Specification and **must not** redefine its core invariants.
+- Forks and derivative works may exist under the terms of the license, but **must not** present themselves as canonical unless the Specification Steward designates them.
+
+In case of conflict, the license files and the normative text of the PIC Specification take precedence over this README.
+
+## Origin and stewardship
+
+The **Provenance Identity Continuity (PIC) Model** was originally developed by **Nicola Gallo**.
+Its dated research history and primary publications are recorded in the PIC Specification, under [Origins, Authorship, and Historical Record](https://github.com/pic-protocol/pic-spec/blob/main/draft/0.2/pic-spec.md#origins-authorship-and-historical-record).
+The PIC Specifications are published and maintained by **Nitro Agility S.r.l.** as Specification Steward, which also operates this organization.
+Attribution and canonical-version information is summarized in the specification [NOTICE](https://github.com/pic-protocol/pic-spec/blob/main/NOTICE.md).
 
 ## License
 
-This project is licensed under the  
-**Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
-
-See `LICENSE` for full terms.
-
----
-
-## Organization
-
-This GitHub organization is operated by **Nitro Agility S.r.l.**
-
-For governance, attribution, and legal context, see the 
-[PIC Specification](https://github.com/pic-protocol/pic-spec).
-
----
-
-## Governance and Contributions
-
-Project process and responsibilities are defined by the following documents:
-
-- **Governance:** `GOVERNANCE.md`
-- **Contributing:** `CONTRIBUTING.md`
-- **Code of Conduct:** `CODE_OF_CONDUCT.md`
-- **Maintainers:** `MAINTAINERS.md`
-- **Security Policy:** `SECURITY.md`
-
-Authorship, attribution requirements, and the normative status of the
-PIC Model, PIC Spec, and PIC Protocol documents are defined **exclusively**
-in the PIC Specification (Appendix B).
-
-In case of conflict, the applicable LICENSE files and the normative text of the
-PIC Specification and any Official PIC Protocol specifications take precedence
-over this README.
+The content of this repository is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+See [`LICENSE`](LICENSE) for the full terms.
